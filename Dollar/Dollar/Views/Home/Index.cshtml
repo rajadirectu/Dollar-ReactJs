@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Business License</h2>
+<div style="width:90%; margin:0 auto;">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Store</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Vendor</th>
+                <th>Name</th>
+                <th>License Type</th>
+                <th>Expiration Date</th>
+                <th>License Year</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<style>
+    tr.even {
+        background-color: #F5F5F5 !important;
+    }
+</style>
+@* Load datatable css *@
+<link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet" />
+@* Load datatable js *@
+@section Scripts{
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var jsonData = {
+                "data": [
+                    {
+                        "Store": "2904",
+                        "City": "EL CAMPO,TX",
+                        "Country": "WHARTON",
+                        "Vendor": "72654",
+                        "Name": "TEXAS DEPARTMENT",
+                        "LicenseType": "FOOD STATE",
+                        "ExpirationDate": "12/31/2009",
+                        "LicenseYear": "2009"
+                    },
+                    {
+                        "Store": "2913",
+                        "City": "DAVENPORT,IA",
+                        "Country": "SCOTT",
+                        "Vendor": "81535",
+                        "Name": "DAVENPORT CITYOF",
+                        "LicenseType": "BL CITY",
+                        "ExpirationDate": "03/31/2012",
+                        "LicenseYear": "2012"
+                    }]
+            };
+
+            var country = [
+                "WHARTON",
+                "SCOTT",
+                "DAVIDSON",
+                "WARREN"
+            ];                             
+          
+            $('#myTable').DataTable({
+                //"ajax": {
+                //    //"url": "/home/loaddata",
+                //    //"type": "GET",
+                    "datatype": "json",
+                    data: jsonData.data,
+                    "aLengthMenu": [[1, 2, 4, -1], [1, 2, 4, "All"]],
+                    "iDisplayLength": 1,
+                    "columns": [
+                    { "data": "Store", "autoWidth": true },
+                    { "data": "City", "autoWidth": true },
+                   // { "data": "Country", "autoWidth": true },
+                        {
+                            "data": "Country", "autoWidth": true,
+                            "render": function (d, t, r, index) {
+                                var $select = $("<select name='countries' title='countryName'></select>", {
+                                    "id": index.row + "store",
+                                    "value": d
+                                });
+                                $.each(country, function (k, v) {
+                                    var $option = $("<option></option>", {
+                                        "text": v,
+                                        "value": v
+                                    });
+                                    if (d === v) {
+                                        $option.attr("selected", "selected")
+                                    }
+                                    $select.append($option);
+                                });
+                                return $select.prop("outerHTML");
+                            }
+                        },
+
+                    //dropdown end
+                    { "data": "Vendor", "autoWidth": true },
+                    { "data": "Name", "autoWidth": true },
+                    { "data": "LicenseType", "autoWidth": true },
+                    { "data": "ExpirationDate", "autoWidth": true },
+                    { "data": "LicenseYear", "autoWidth": true }
+                ]
+            //}
+            });
+        });
+    </script>
+}
