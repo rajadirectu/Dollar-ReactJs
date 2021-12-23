@@ -1,0 +1,50 @@
+.App {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .drag-container {
+    display: flex;
+      justify-content: center;
+      height: auto;
+  }
+  
+  .head {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #CCCCCC;
+    width:100%;
+  }
+  
+  .droppable {
+    background: lightgrey;
+    padding: 4px;
+    width: 250px;
+    min-height: 400px;
+  }
+  
+  .draggable {
+    cursor:pointer;
+    user-select: none;
+    padding: 16px;
+    margin: 0px 0px 3px;
+    min-height: 20px;
+    background-color: rgb(69, 108, 134);
+    color: white;
+    position: static;
+  }
+  
+  .inProgress {
+    background: lightgrey;
+    padding: 4px;
+    width: 250px;
+    min-height: 400px;
+  }
+  
+  .invalid-feedback {
+  
+    display: block !important;
+    color: red;
+  
+  }

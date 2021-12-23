@@ -1,0 +1,25 @@
+
+<!--
+<nav>
+    <a routerLink="/businesslicense/list">List</a>
+    <a routerLink="/businesslicense/detail">Detail</a> 
+    <a routerLink="/businesslicense/history">History</a> 
+    </nav>
+<router-outlet></router-outlet>
+
+<mat-tab-group>
+    <mat-tab label="List" routerLink="/businesslicense/list">  </mat-tab>
+    <mat-tab label="Detail" routerLink="/businesslicense/detail">  </mat-tab>
+    <mat-tab label="History" routerLink="/businesslicense/history">  </mat-tab>
+</mat-tab-group>
+<router-outlet></router-outlet>
+-->
+<!--<p>business-license works!</p> -->
+<nav mat-tab-nav-bar ngClass = "tabs" animationDuration="0ms">
+    <a mat-tab-link routerLink="/businesslicense/list" routerLinkActive="active-link">List</a>
+    <a mat-tab-link routerLink="/businesslicense/detail" routerLinkActive="active-link">Detail</a>
+    <a mat-tab-link routerLink="/businesslicense/history" routerLinkActive="active-link">History</a>
+ </nav>  
+ <div>	
+   <router-outlet></router-outlet>	
+ </div> 

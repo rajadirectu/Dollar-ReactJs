@@ -1,0 +1,119 @@
+[   
+    {
+      "Store": "2904",
+      "City": "EL CAMPO,TX",
+      "Country": "WHARTON",
+      "Vendor": "72654",
+      "Name": "TEXAS DEPARTMENT",
+      "LicenseType": "FOOD STATE",
+      "ExpirationDate": "12/31/2009",
+      "LicenseYear": "2009"
+  },
+  {
+      "Store": "2913",
+      "City": "DAVENPORT,IA",
+      "Country": "SCOTT",
+      "Vendor": "81535",
+      "Name": "DAVENPORT CITYOF",
+      "LicenseType": "BL CITY",
+      "ExpirationDate": "03/31/2012",
+      "LicenseYear": "2012"
+  },
+  {
+    "Store": "2913",
+    "City": "DAVENPORT,IA",
+    "Country": "SCOTT",
+    "Vendor": "81535",
+    "Name": "DAVENPORT CITYOF",
+    "LicenseType": "BL CITY",
+    "ExpirationDate": "03/31/2012",
+    "LicenseYear": "2012"
+}, {
+  "Store": "2904",
+  "City": "EL CAMPO,TX",
+  "Country": "WHARTON",
+  "Vendor": "72654",
+  "Name": "TEXAS DEPARTMENT",
+  "LicenseType": "FOOD STATE",
+  "ExpirationDate": "12/31/2009",
+  "LicenseYear": "2009"
+},
+{
+  "Store": "2913",
+  "City": "DAVENPORT,IA",
+  "Country": "SCOTT",
+  "Vendor": "81535",
+  "Name": "DAVENPORT CITYOF",
+  "LicenseType": "BL CITY",
+  "ExpirationDate": "03/31/2012",
+  "LicenseYear": "2012"
+},
+{
+"Store": "2913",
+"City": "DAVENPORT,IA",
+"Country": "SCOTT",
+"Vendor": "81535",
+"Name": "DAVENPORT CITYOF",
+"LicenseType": "BL CITY",
+"ExpirationDate": "03/31/2012",
+"LicenseYear": "2012"
+},{
+  "Store": "2904",
+  "City": "EL CAMPO,TX",
+  "Country": "WHARTON",
+  "Vendor": "72654",
+  "Name": "TEXAS DEPARTMENT",
+  "LicenseType": "FOOD STATE",
+  "ExpirationDate": "12/31/2009",
+  "LicenseYear": "2009"
+},
+{
+  "Store": "2913",
+  "City": "DAVENPORT,IA",
+  "Country": "SCOTT",
+  "Vendor": "81535",
+  "Name": "DAVENPORT CITYOF",
+  "LicenseType": "BL CITY",
+  "ExpirationDate": "03/31/2012",
+  "LicenseYear": "2012"
+},
+{
+"Store": "2913",
+"City": "DAVENPORT,IA",
+"Country": "SCOTT",
+"Vendor": "81535",
+"Name": "DAVENPORT CITYOF",
+"LicenseType": "BL CITY",
+"ExpirationDate": "03/31/2012",
+"LicenseYear": "2012"
+}, {
+"Store": "2904",
+"City": "EL CAMPO,TX",
+"Country": "WHARTON",
+"Vendor": "72654",
+"Name": "TEXAS DEPARTMENT",
+"LicenseType": "FOOD STATE",
+"ExpirationDate": "12/31/2009",
+"LicenseYear": "2009"
+},
+{
+"Store": "2913",
+"City": "DAVENPORT,IA",
+"Country": "SCOTT",
+"Vendor": "81535",
+"Name": "DAVENPORT CITYOF",
+"LicenseType": "BL CITY",
+"ExpirationDate": "03/31/2012",
+"LicenseYear": "2012"
+},
+{
+"Store": "2913",
+"City": "DAVENPORT,IA",
+"Country": "SCOTT",
+"Vendor": "81535",
+"Name": "DAVENPORT CITYOF",
+"LicenseType": "BL CITY",
+"ExpirationDate": "03/31/2012",
+"LicenseYear": "2012"
+}
+  ]
